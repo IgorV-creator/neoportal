@@ -1,0 +1,47 @@
+version: '3.0'
+
+services:
+  web:
+    container_name: react-neo
+    image: ivoin/react-neo
+    build:
+      context: ./neoflex/
+    volumes:
+      - ./neoflex/src/public
+      - ./neoflex/node_modules
+    ports:
+      - 3000:3000
+    command: npm run start:dev
+    restart: always
+  serve:
+    container_name: serve-neo
+    image: ivoin/serve-neo
+    build:
+      context: ./server/
+    env_file:
+      - ./server/.env.dev
+    volumes:
+      - ./server/.:/app
+      - ./server/app/node_modules
+    ports:
+      - 5000:5000
+      - 9229:9229
+    command: npm run start:dev
+    depends_on:
+      - postgres
+    restart: always
+  postgres:
+    container_name: postgres
+    image: postgres:12
+    env_file:
+      - ./server/.env.dev
+    environment:
+      PG_DATA: /var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  pgdata:

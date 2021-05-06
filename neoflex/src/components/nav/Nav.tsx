@@ -1,16 +1,16 @@
 import React from 'react'
 import { Router, Link } from 'react-router-dom'
 import { createBrowserHistory } from 'history';
-import M from 'materialize-css'
+// import M from 'materialize-css'
 
 const history = createBrowserHistory();
 
 const Nav: React.FC = () => {
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init(elems);
-    });
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     var elems = document.querySelectorAll('.sidenav');
+    //     var instances = M.Sidenav.init(elems);
+    // });
 
     return (
         <Router history={history}>

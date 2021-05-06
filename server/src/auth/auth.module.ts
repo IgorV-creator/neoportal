@@ -12,7 +12,7 @@ import { AuthService } from './auth.service';
     JwtModule.register({
     //секретный ключ пользователя
     secret: process.env.PRIVATE_KEY || 'SECRET',
-    //Время жизни токена - 24 часа
+    //Время жизни токена пользователя - 24 часа
     signOptions: {
       expiresIn: '24h'
     }

@@ -1800,6 +1800,13 @@
     "jest-diff" "^26.0.0"
     "pretty-format" "^26.0.0"
 
+"@types/jquery@*":
+  "integrity" "sha512-6RXU9Xzpc6vxNrS6FPPapN1SxSHgQ336WC6Jj/N8q30OiaBZ00l1GBgeP7usjVZPivSkGUfL1z/WW6TX989M+w=="
+  "resolved" "https://registry.npmjs.org/@types/jquery/-/jquery-3.5.5.tgz"
+  "version" "3.5.5"
+  dependencies:
+    "@types/sizzle" "*"
+
 "@types/json-schema@*", "@types/json-schema@^7.0.3", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6":
   "integrity" "sha512-cxWFQVseBm6O9Gbw1IWb8r6OS4OhSt3hPZLkFApLjM8TEXROBuQGLAH2i2gZpcXdLBIrpXuTDhH7Vbm1iXmNGA=="
   "resolved" "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.7.tgz"
@@ -1809,6 +1816,14 @@
   "integrity" "sha1-7ihweulOEdK4J7y+UnC86n8+ce4="
   "resolved" "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   "version" "0.0.29"
+
+"@types/materialize-css@^1.0.9":
+  "integrity" "sha512-qj0EBbM3uxYYQg/jYG2bZZy1CCWLWIcQ0gtGZyxJGGyCBMNVZIDSnQAGJjQSeSDO9n1PqyVuSDIyEGN28ranjw=="
+  "resolved" "https://registry.npmjs.org/@types/materialize-css/-/materialize-css-1.0.9.tgz"
+  "version" "1.0.9"
+  dependencies:
+    "@types/jquery" "*"
+    "cash-dom" "*"
 
 "@types/minimatch@*":
   "integrity" "sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA=="
@@ -1894,6 +1909,11 @@
   "integrity" "sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA=="
   "resolved" "https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.1.tgz"
   "version" "0.16.1"
+
+"@types/sizzle@*":
+  "integrity" "sha512-JYM8x9EGF163bEyhdJBpR2QX1R5naCJHC8ucJylJ3w9/CVBaskdQ8WqBf8MmQrd1kRvp/a4TS8HJ+bxzR7ZJYQ=="
+  "resolved" "https://registry.npmjs.org/@types/sizzle/-/sizzle-2.3.3.tgz"
+  "version" "2.3.3"
 
 "@types/source-list-map@*":
   "integrity" "sha512-K5K+yml8LTo9bWJI/rECfIPrGgxdpeNbj+d53lwN4QjW1MCwlkhUms+gtdzigTeUyBr09+u8BwOIY3MXvHdcsA=="
@@ -3242,6 +3262,11 @@
   "integrity" "sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw="
   "resolved" "https://registry.npmjs.org/caseless/-/caseless-0.12.0.tgz"
   "version" "0.12.0"
+
+"cash-dom@*":
+  "integrity" "sha512-QTa50rFuPaX8klEDEbwLr+jVutwpvZEBQ0NpMMyng+je7gNe9Bz/JsOLHIG24tvNSSSIN/Q1QD0bnF6PQzWKHA=="
+  "resolved" "https://registry.npmjs.org/cash-dom/-/cash-dom-8.1.0.tgz"
+  "version" "8.1.0"
 
 "chalk@^2.0.0":
   "integrity" "sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ=="
