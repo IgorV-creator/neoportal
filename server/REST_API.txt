@@ -6,5 +6,5 @@
 Создание ролей - http://localhost:5000/roles
 Чтение ролей http://localhost:5000/roles/(ADMIN или USER)
 Назначение ролей (только от Админа) -http://localhost:5000/users/role
-Бан (только Админ) -http://localhost:5000/users/ban
+Бан (только Админ) - http://localhost:5000/users/ban
 Документация проекта Swagger - http://localhost:5000/api/docs

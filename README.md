@@ -20,13 +20,14 @@ $ 3. docker-compose up
 3) Для получения списка пользователей или чтения постов, необходимо авторизоваться
 
 ```bash
-$ 1. create posts - Создание постов (POST) - /posts
-$ 2. get users (GET) - /users
-$ 3. create users (POST) - /users
-$ 4. registration users (POST) - /auth/registration
-$ 5. loginIn users (POST) - /auth/login
-$ 6. Create roles (POST) - /roles
-$ 7. get role (GET) - /roles/(ADMIN | USER | ... )
-$ 8. add role User (только Админ POST) - /users/role
-$ 9, Документация Swagger - /api/docs
+$ 1. create posts - Создание постов (POST) - /posts # { "title:" "Post 1", "content": "la la la ", "userId": 7, "file": "asfasf", "image": "logo.png" }
+$ 2. get users (GET) - /users # { "email": "example@exampe.com", "password": "123" }
+$ 3. create users (POST) - /users # { "email": "example@exampe.com", "password": "123" }
+$ 4. registration users (POST) - /auth/registration # { "email": "example@exampe.com", "password": "123" }
+$ 5. loginIn users (POST) - /auth/login # { "email": "example@exampe.com", "password": "123" }
+$ 6. Create roles (POST) - /roles # { "value": "USER", "description": "Пользователь" }
+$ 7. get role (GET) - /roles/role # /roles/ADMIN
+$ 8. add role User (только Админ POST) - /users/role # { "userId": 7, "value": "ADMIN" }
+$ 9. add ban User (только Админ POST) - /users/ban # { "userId": 7, "banReason": "Хулиган"}
+$ 9. Документация Swagger - /api/docs
 ```
