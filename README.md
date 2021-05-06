@@ -21,7 +21,7 @@ $ 3. docker-compose up
 
 ```bash
 $ 1. create posts - Создание постов (POST) - /posts # { "title": "Post 1", "content": "la la la ", "userId": 7, "file": "asfasf", "image": "logo.png" }
-$ 2. get users (GET) - /users # { "email": "example@exampe.com", "password": "123" }
+$ 2. get users (GET) - /users
 $ 3. create users (POST) - /users # { "email": "example@exampe.com", "password": "123" }
 $ 4. registration users (POST) - /auth/registration # { "email": "example@exampe.com", "password": "123" }
 $ 5. loginIn users (POST) - /auth/login # { "email": "example@exampe.com", "password": "123" }
