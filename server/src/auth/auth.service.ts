@@ -43,7 +43,7 @@ export class AuthService {
 
     private validateUser = async (userDto: CreateUserDto) => {
         const user = await this.userService.getUsersByEmail(userDto.email);
-        //проверим совпадают ли пароли. Cравни ваем только хешированные
+        //проверим совпадают ли пароли. Cравниваем только хешированные
         const passwordEquals = await bcrypt.compareSync(userDto.password, user.password);
             if(user && passwordEquals){
                 return user;

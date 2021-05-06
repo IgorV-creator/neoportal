@@ -1,5 +1,5 @@
-Создание постов - http://127.0.0.1:4000/posts
-Получение списка юзеров -http://localhost:5000/users
+Создание постов - http://localhost:5000/posts
+Получение списка юзеров - http://localhost:5000/users
 Создание юзера --http://localhost:5000/users (POST)
 Регистрация юзера -http://localhost:5000/auth/registration
 Авторизация юзера - http://localhost:5000/auth/login
