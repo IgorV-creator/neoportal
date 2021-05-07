@@ -12,7 +12,7 @@ async function start() {
         .setTitle('NeoflexPortal - prototype')
         .setDescription('Документация REST API')
         .setVersion('0.0.1')
-        .addTag('react-nodejs-nest-docer')
+        .addTag('react-nodejs-nest-docker')
         .build()
     const documentation = SwaggerModule.createDocument(app, config);
     SwaggerModule.setup('/api/docs', app, documentation);
