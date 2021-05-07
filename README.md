@@ -9,8 +9,8 @@ $ npm install
 Развертывание проекта
 
 ```bash
-$ 1. docker pull ivoin/react-neo
-$ 2. docker pull ivoin/serve-neo
+$ 1. docker pull ivoin/ui-neo
+$ 2. docker pull ivoin/server-neo
 $ 3. docker-compose up
 ```
 
