@@ -16,8 +16,8 @@ const Nav: React.FC = () => {
         <Router history={history}>
             <nav>
                 <div className="nav-wrapper">
-                <Link to="#!" className="brand-logo">NeoflexPortal</Link>
-                <Link to="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></Link>
+                <Link to="/" className="brand-logo">NeoflexPortal</Link>
+                <Link to="/" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></Link>
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
                     <li> <Link to="/login">Home</Link></li>
                     <li> <Link to="/login">LolinIn</Link></li>

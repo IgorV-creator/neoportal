@@ -12,6 +12,7 @@ import { Post } from "./posts/posts.model";
 import { FilesModule } from './files/files.module';
 import { ServeStaticModule } from "@nestjs/serve-static";
 import * as path from 'path';
+// const mariadb = require('mariadb');
 
 @Module({
     imports: [
@@ -23,14 +24,15 @@ import * as path from 'path';
         }),
         //Устанавливаем связь с БД
         SequelizeModule.forRoot({
-            dialect: 'postgres',
-            host: process.env.POSTGRES_HOST,
-            port: Number(process.env.POSTGRES_PORT),
-            username: process.env.POSTGRES_USER,
-            password: String(process.env.POSTGRES_PASSWORD),
-            database: process.env.POSTGRES_DB,
+            dialect: 'mariadb',
+            host: process.env.MIRAIDB_HOST,
+            port: Number(process.env.MIRAIDB_PORT),
+            username: process.env.MIRAIDB_USERNAME,
+            password: String(process.env.MIRAIDB_PASSWORD),
+            database: process.env.MIRAIDB_DB,
             models:  [User, Role, UsersRoles, Post],
-            autoLoadModels: true
+            autoLoadModels: true,
+            // synchronize: true
             }),
         UsersModule, RolesModule, AuthModule, PostsModule, FilesModule,
         ],

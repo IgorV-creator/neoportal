@@ -3377,7 +3377,7 @@
         "affectsGlobalScope": false
       },
       "../src/auth/auth.service.ts": {
-        "version": "cd581aa9d61947d8ae03bacd4a4806aeb84e70a3de85ec6f5097b77cf322f2a9",
+        "version": "f2854c9ea876eaee1d34e8b5aae00f2577fbe4a6cda18e4d7bbcf90b2343aa41",
         "signature": "99ca44014d31b5f23dd7e4d87a858f312c88bba6d26dcc3f87d99ee269819c3a",
         "affectsGlobalScope": false
       },
@@ -3562,7 +3562,7 @@
         "affectsGlobalScope": false
       },
       "../src/app.module.ts": {
-        "version": "d7d8aa912800fa40bde72e78800cb1e748939a748d84f2be8e20ee59affeac73",
+        "version": "1b0dd2eb2d43f10325d02943a2f597550f61018592806e742fdb9eb9ef82d4b7",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -3829,6 +3829,11 @@
       "../node_modules/@types/express/index.d.ts": {
         "version": "3b05c396564e51753e921e1cc4aae1cf7cd9be53c891cf2e81fa29f11c0bd373",
         "signature": "3b05c396564e51753e921e1cc4aae1cf7cd9be53c891cf2e81fa29f11c0bd373",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/geojson/index.d.ts": {
+        "version": "3a68b9e1129584f9e42f615b56926b0d2c1d22746e9c4689faf48d0e9749536a",
+        "signature": "3a68b9e1129584f9e42f615b56926b0d2c1d22746e9c4689faf48d0e9749536a",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/graceful-fs/index.d.ts": {
@@ -10123,6 +10128,7 @@
       "../node_modules/@types/estree/index.d.ts",
       "../node_modules/@types/express-serve-static-core/index.d.ts",
       "../node_modules/@types/express/index.d.ts",
+      "../node_modules/@types/geojson/index.d.ts",
       "../node_modules/@types/graceful-fs/index.d.ts",
       "../node_modules/@types/istanbul-lib-coverage/index.d.ts",
       "../node_modules/@types/istanbul-lib-report/index.d.ts",

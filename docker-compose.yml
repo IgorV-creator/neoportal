@@ -2,24 +2,24 @@ version: '3.0'
 
 services:
   web:
-    container_name: react-neo
-    image: ivoin/react-neo
+    container_name: ui-neo
+    image: ivoin/ui-neo
     build:
-      context: ./neoflex/
+      context: ./ui/
     volumes:
-      - ./neoflex/src/public
-      - ./neoflex/node_modules
+      - ./ui/src/public
+      - ./ui/node_modules
     ports:
       - 3000:3000
     command: npm run start:dev
     restart: always
-  serve:
-    container_name: serve-neo
-    image: ivoin/serve-neo
+  server:
+    container_name: server-neo
+    image: ivoin/server-neo
     build:
       context: ./server/
     env_file:
-      - ./server/.env.dev
+      - ./server/.dev.env
     volumes:
       - ./server/.:/app
       - ./server/app/node_modules
@@ -28,20 +28,14 @@ services:
       - 9229:9229
     command: npm run start:dev
     depends_on:
-      - postgres
+      - mariadb
     restart: always
-  postgres:
-    container_name: postgres
-    image: postgres:12
-    env_file:
-      - ./server/.env.dev
+  mariadb:
+    container_name: mariadb
+    image: mariadb
+    restart: always
     environment:
-      PG_DATA: /var/lib/postgresql/data
-    ports:
-      - 5432:5432
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-    restart: always
-
-volumes:
-  pgdata:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: neoflex_portal
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
